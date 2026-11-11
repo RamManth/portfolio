@@ -2,5 +2,8 @@
 **/.DS_Store
 .git
 .gitignore
+.vercel
+.env*
 ui:ux concepts i work with.PNG
 ram photo /
+
