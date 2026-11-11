@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#f3ecdc" />
+  <title>Ram Manthanwar | Visual, UI/UX &amp; Thumbnail Designer</title>
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23b83b2a' stroke='%231a2230' stroke-width='4'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23f3ecdc' font-family='serif'%3E%E5%8D%B0%3C/text%3E%3C/svg%3E"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.add("js-scroll");</script>
+</head>
+<body>
+  <!-- Subtle Washi Paper Grain Overlay -->
+  <svg class="paper-grain-svg" aria-hidden="true">
+    <filter id="washi-noise">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="3" stitchTiles="stitch" />
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+    <rect width="100%" height="100%" filter="url(#washi-noise)" opacity="0.045" />
+  </svg>
+
+  <!-- Top Woodblock Border Bar -->
+  <div class="ukiyoe-top-ribbon" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="brand-lockup">
+        <span class="hanko-seal" aria-hidden="true">印</span>
+        <span class="brand-text">
+          <span class="brand-name" data-field="name">Ram Manthanwar</span>
+          <span class="brand-sub">DESIGN STUDIO • 浮世絵</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#about" data-nav-target="about">About</a>
+        <a href="#skills" data-nav-target="skills">Craft &amp; Skills</a>
+        <a href="#work" data-nav-target="work">Selected Works</a>
+        <a href="#live-sites" data-nav-target="live-sites">Live Websites</a>
+        <a href="#concepts" data-nav-target="concepts">Website Styles</a>
+        <a href="#contact" data-nav-target="contact" class="nav-cta">Commission</a>
+      </nav>
+    </div>
+    <div class="scroll-progress-track" aria-hidden="true">
+      <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+  </header>
+
+  <!-- Floating Scroll Connector Spine -->
+  <aside class="scroll-spine" id="scrollSpine" aria-label="Page section progress">
+    <div class="spine-rail" aria-hidden="true">
+      <div class="spine-rail-fill" id="spineRailFill"></div>
+    </div>
+    <a href="#hero" class="spine-node is-active" data-spine="hero" aria-label="Intro section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">Intro</span>
+    </a>
+    <a href="#about" class="spine-node" data-spine="about" aria-label="About section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">About</span>
+    </a>
+    <a href="#skills" class="spine-node" data-spine="skills" aria-label="Tools section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">Tools</span>
+    </a>
+    <a href="#work" class="spine-node" data-spine="work" aria-label="Portfolio showcase section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">Works</span>
+    </a>
+    <a href="#live-sites" class="spine-node" data-spine="live-sites" aria-label="Live websites section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">Websites</span>
+    </a>
+    <a href="#concepts" class="spine-node" data-spine="concepts" aria-label="19 website styles section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">19 Styles</span>
+    </a>
+    <a href="#contact" class="spine-node" data-spine="contact" aria-label="Contact section">
+      <span class="spine-dot"></span>
+      <span class="spine-label">Contact</span>
+    </a>
+  </aside>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section" data-section="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow-row">
+            <span class="seal-pill">AVAILABLE FOR FREELANCE</span>
+            <span class="mono-meta" data-field="location">Remote Worldwide • Available</span>
+          </div>
+
+          <h1 class="hero-title">
+            Thumbnails, UI/UX &amp; Websites Made to <span class="vermilion-accent">Stand Out.</span>
+          </h1>
+
+          <p class="hero-lead" data-field="tagline">
+            I design YouTube thumbnails people want to click, clean website and app screens in Figma, and sharp Instagram posts using Photoshop, Illustrator, and Canva.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">Explore Gallery</a>
+            <a href="#contact" class="btn btn-outline">Contact &amp; Rates</a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-num">07</span>
+              <span class="metric-label">High-CTR Thumbnail Styles</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-num">02</span>
+              <span class="metric-label">Live Client Websites</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-num">19</span>
+              <span class="metric-label">Website &amp; UI/UX Concepts</span>
+            </div>
+            <div class="metric-divider" aria-hidden="true"></div>
+            <div class="metric-item">
+              <span class="metric-num">04</span>
+              <span class="metric-label">Core Creative Tools</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Woodblock Portrait Frame -->
+        <div class="hero-portrait-wrap">
+          <div class="woodblock-cartouche" id="portraitCard" tabindex="0">
+            <div class="cartouche-vertical-tag" aria-hidden="true">絵師 • CREATOR &amp; DESIGNER</div>
+            <div class="portrait-frame">
+              <img
+                src="assets/creator-portrait.png"
+                alt="Ram Manthanwar portrait framed in Ukiyo-e style"
+                class="portrait-img"
+              />
+              <span class="portrait-hover-hint" aria-hidden="true">
+                <span class="hint-desktop">Hover for details</span>
+                <span class="hint-touch">Tap photo for details</span>
+              </span>
+              <div class="portrait-hover-card" aria-label="Ram Manthanwar Personal Details">
+                <div class="hover-card-top">
+                  <span class="seal-pill">PERSONAL INFO</span>
+                  <span class="hanko-mini" aria-hidden="true">印</span>
+                </div>
+                <h3 class="hover-name" data-field="name">Ram Manthanwar</h3>
+                <p class="hover-role" data-field="role">Thumbnail, UI/UX &amp; Social Designer</p>
+                <dl class="hover-details">
+                  <div class="hover-row">
+                    <dt>Location</dt>
+                    <dd data-field="location">Remote Worldwide • Available</dd>
+                  </div>
+                  <div class="hover-row">
+                    <dt>Focus Areas</dt>
+                    <dd data-field="experience">Thumbnails, UI/UX &amp; Live Web</dd>
+                  </div>
+                  <div class="hover-row">
+                    <dt>Tools</dt>
+                    <dd>Photoshop, Figma, Illustrator, Canva</dd>
+                  </div>
+                  <div class="hover-row">
+                    <dt>Email</dt>
+                    <dd>
+                      <a href="mailto:ram.manthanwar@gmail.com" data-field="email">ram.manthanwar@gmail.com</a>
+                    </dd>
+                  </div>
+                  <div class="hover-row">
+                    <dt>Instagram</dt>
+                    <dd>
+                      <a href="https://www.instagram.com/randm_aces_memory/" target="_blank" rel="noopener noreferrer" data-field="instagram">@randm_aces_memory</a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="cartouche-footer">
+              <span class="mono-meta" data-field="handle">@randm_aces_memory</span>
+              <span class="hanko-mini" title="Creator Seal">印</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hokusai-Inspired Indigo Wave Divider -->
+      <div class="wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+          <path
+            class="wave-layer wave-layer-1"
+            d="M0,70 C160,115 280,25 460,65 C620,100 760,18 950,62 C1120,102 1280,32 1440,68 L1440,120 L0,120 Z"
+            fill="#1D3E5E"
+            opacity="0.16"
+          />
+          <path
+            class="wave-layer wave-layer-2"
+            d="M0,88 C190,48 340,112 540,78 C720,46 890,108 1090,74 C1260,46 1350,86 1440,78 L1440,120 L0,120 Z"
+            fill="#1D3E5E"
+            opacity="0.92"
+          />
+          <path
+            class="wave-layer wave-layer-3"
+            d="M0,102 C220,82 400,118 640,94 C860,72 1080,116 1440,92 L1440,120 L0,120 Z"
+            fill="#152A42"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <!-- About & Personal Profile Scroll -->
+    <section id="about" class="about-section" data-section="about">
+      <div class="tab-transition tx-on-indigo" data-transition="about" aria-hidden="true">
+        <span class="tx-line"></span>
+        <div class="tx-gate">
+          <i class="tx-tick"></i>
+          <span class="tx-pill"><span class="tx-num">01</span> About</span>
+          <i class="tx-tick"></i>
+        </div>
+      </div>
+      <div class="container">
+        <div class="woodblock-panel about-panel">
+          <div class="section-header-inline">
+            <div>
+              <span class="section-kicker">PROFILE • 紹介</span>
+              <h2 class="section-title">About the Designer</h2>
+            </div>
+            <span class="profile-note-pill" data-field="availability">Open for Freelance Projects</span>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-bio">
+              <p data-field="bio">
+                Hi, I’m <strong>Ram Manthanwar</strong>. I design YouTube thumbnails, clean website and app screens, and Instagram posts. I keep layouts simple and focused so viewers get the story right away and feel excited to click.
+              </p>
+              <p class="about-secondary">
+                Whether I’m editing detailed thumbnails in <strong>Photoshop</strong>, mapping clean user flows in <strong>Figma</strong>, drawing custom vectors in <strong>Illustrator</strong>, or putting together fast social carousels in <strong>Canva</strong>, I adjust the visual style to fit your channel or brand.
+              </p>
+            </div>
+
+            <dl class="bio-facts">
+              <div class="fact-row">
+                <dt>Name / Brand</dt>
+                <dd data-field="name">Ram Manthanwar</dd>
+              </div>
+              <div class="fact-row">
+                <dt>Role</dt>
+                <dd data-field="role">Thumbnail, UI/UX &amp; Social Designer</dd>
+              </div>
+              <div class="fact-row">
+                <dt>Location</dt>
+                <dd data-field="location">Remote Worldwide • Available</dd>
+              </div>
+              <div class="fact-row">
+                <dt>Focus Areas</dt>
+                <dd data-field="experience">Thumbnails, UI/UX &amp; Live Web</dd>
+              </div>
+              <div class="fact-row">
+                <dt>Email</dt>
+                <dd><a href="mailto:ram.manthanwar@gmail.com" class="inline-contact-link" data-field="email">ram.manthanwar@gmail.com</a></dd>
+              </div>
+              <div class="fact-row">
+                <dt>Instagram</dt>
+                <dd><a href="https://www.instagram.com/randm_aces_memory/" target="_blank" rel="noopener noreferrer" class="inline-contact-link" data-field="instagram">@randm_aces_memory</a></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transition 02: About -> Craft & Skills -->
+    <div class="tab-transition tx-wave tx-indigo-to-washi" data-transition="skills" aria-hidden="true">
+      <svg class="tx-wave-svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
+        <path class="tx-fill-mist" d="M0,48 C240,22 480,68 720,44 C960,20 1180,68 1440,42 L1440,0 L0,0 Z"/>
+        <path class="tx-fill-top" d="M0,0 L1440,0 L1440,34 C1180,62 960,12 720,36 C480,60 240,14 0,38 Z"/>
+        <path class="tx-wave-stroke" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+        <path class="tx-accent-ribbon" pathLength="100" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+      </svg>
+      <div class="tx-gate">
+        <i class="tx-tick"></i>
+        <span class="tx-pill"><span class="tx-num">02</span> Craft &amp; Skills</span>
+        <i class="tx-tick"></i>
+      </div>
+    </div>
+
+    <!-- Skills / Tools Section -->
+    <section id="skills" class="skills-section" data-section="skills">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-kicker">TOOLS OF THE CRAFT • 技芸</span>
+          <h2 class="section-title">Tools I Use Every Day</h2>
+          <p class="section-sub">
+            My four go-to programs for turning rough ideas into sharp thumbnails, websites, and social posts.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Photoshop -->
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="tool-badge tool-ps">
+                <img src="assets/logos/photoshop.svg" alt="Adobe Photoshop official logo" class="tool-logo-img" />
+              </div>
+              <span class="hanko-tag">EXPERT</span>
+            </div>
+            <h3>Adobe Photoshop</h3>
+            <p>
+              Clean photo cutouts, dramatic lighting, natural color grading, and eye-catching YouTube thumbnails that read clearly on mobile.
+            </p>
+            <div class="proficiency-track" aria-label="Photoshop proficiency 95 percent">
+              <div class="proficiency-fill" style="width: 95%"></div>
+            </div>
+            <ul class="skill-chips">
+              <li>Compositing</li>
+              <li>Color Grading</li>
+              <li>Retouching</li>
+            </ul>
+          </article>
+
+          <!-- Figma -->
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="tool-badge tool-fg">
+                <img src="assets/logos/figma.svg" alt="Figma official logo" class="tool-logo-img" />
+              </div>
+              <span class="hanko-tag">EXPERT</span>
+            </div>
+            <h3>Figma</h3>
+            <p>
+              Responsive web layouts, mobile apps, neat component sets, wireframes, and interactive prototypes that feel easy to navigate.
+            </p>
+            <div class="proficiency-track" aria-label="Figma proficiency 92 percent">
+              <div class="proficiency-fill" style="width: 92%"></div>
+            </div>
+            <ul class="skill-chips">
+              <li>UI Systems</li>
+              <li>Prototyping</li>
+              <li>Mobile Apps</li>
+            </ul>
+          </article>
+
+          <!-- Illustrator -->
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="tool-badge tool-ai">
+                <img src="assets/logos/illustrator.svg" alt="Adobe Illustrator official logo" class="tool-logo-img" />
+              </div>
+              <span class="hanko-tag">EXPERT</span>
+            </div>
+            <h3>Adobe Illustrator</h3>
+            <p>
+              Crisp vector illustrations, custom typography, brand marks, icons, posters, and print-inspired artwork that stays sharp at any size.
+            </p>
+            <div class="proficiency-track" aria-label="Illustrator proficiency 90 percent">
+              <div class="proficiency-fill" style="width: 90%"></div>
+            </div>
+            <ul class="skill-chips">
+              <li>Vector Art</li>
+              <li>Brand Marks</li>
+              <li>Typography</li>
+            </ul>
+          </article>
+
+          <!-- Canva -->
+          <article class="skill-card">
+            <div class="skill-top">
+              <div class="tool-badge tool-cv">
+                <img src="assets/logos/canva.svg" alt="Canva official logo" class="tool-logo-img" />
+              </div>
+              <span class="hanko-tag">EXPERT</span>
+            </div>
+            <h3>Canva</h3>
+            <p>
+              Fast Instagram carousels, creator brand kits, clean social templates, and promo graphics built for tight posting schedules.
+            </p>
+            <div class="proficiency-track" aria-label="Canva proficiency 96 percent">
+              <div class="proficiency-fill" style="width: 96%"></div>
+            </div>
+            <ul class="skill-chips">
+              <li>IG Carousels</li>
+              <li>Brand Kits</li>
+              <li>Social Ads</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transition 03: Craft & Skills -> Selected Works -->
+    <div class="tab-transition tx-wave tx-washi-to-deep is-mirrored" data-transition="work" aria-hidden="true">
+      <svg class="tx-wave-svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
+        <path class="tx-fill-mist" d="M0,48 C240,22 480,68 720,44 C960,20 1180,68 1440,42 L1440,0 L0,0 Z"/>
+        <path class="tx-fill-top" d="M0,0 L1440,0 L1440,34 C1180,62 960,12 720,36 C480,60 240,14 0,38 Z"/>
+        <path class="tx-wave-stroke" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+        <path class="tx-accent-ribbon" pathLength="100" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+      </svg>
+      <div class="tx-gate">
+        <i class="tx-tick"></i>
+        <span class="tx-pill"><span class="tx-num">03</span> Selected Works</span>
+        <i class="tx-tick"></i>
+      </div>
+    </div>
+
+    <!-- Work Showcase Section -->
+    <section id="work" class="work-section" data-section="work">
+      <div class="container">
+        <div class="work-header-bar">
+          <div>
+            <span class="section-kicker">SELECTED GALLERY • 作品集</span>
+            <h2 class="section-title">Portfolio Showcase</h2>
+          </div>
+
+          <div class="work-controls">
+            <div class="filter-tabs" role="tablist" aria-label="Filter portfolio works">
+              <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+                All Works <span class="count">14</span>
+              </button>
+              <button class="filter-btn" data-filter="thumbnails" role="tab" aria-selected="false">
+                Thumbnails <span class="count">7</span>
+              </button>
+              <button class="filter-btn" data-filter="uiux" role="tab" aria-selected="false">
+                UI/UX Design <span class="count">3</span>
+              </button>
+              <button class="filter-btn" data-filter="instagram" role="tab" aria-selected="false">
+                Instagram Posts <span class="count">4</span>
+              </button>
+            </div>
+
+            <label class="squint-toggle" title="Simulate 168px mobile YouTube feed scale">
+              <input type="checkbox" id="squintToggle" />
+              <span class="squint-slider"></span>
+              <span class="squint-label">Mobile Feed Preview</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Revolving Works Carousel -->
+        <div class="works-carousel" id="worksCarousel" role="region" aria-roledescription="carousel" aria-label="Selected portfolio works revolving carousel">
+          <div class="carousel-stage" id="carouselStage">
+            <button type="button" class="carousel-arrow carousel-prev" id="carouselPrev" aria-label="Previous work">‹</button>
+            <div class="carousel-track" id="galleryGrid">
+          <!-- Thumbnails (7) -->
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="Pure Cinema: Sci-Fi Video Essay"
+            data-tools="Photoshop • Color Grading"
+            data-desc="Warm golden-hour cinema frame with open breathing room and wide serif lettering."
+            data-src="portfolio-thumbnails/01_cinema_essay_pure_cinema.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/01_cinema_essay_pure_cinema.png" alt="Pure Cinema video essay YouTube thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Cinema Essay</span>
+                <span>Photoshop</span>
+              </div>
+              <h3>Pure Cinema: Video Essay</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="Day 1 vs Day 30: IRL Challenge Split"
+            data-tools="Photoshop • Split Retouching"
+            data-desc="Half-and-half transformation comparing stormy cold rain on the left with golden mountain sunlight on the right."
+            data-src="portfolio-thumbnails/02_irl_adventure_day1_day30.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/02_irl_adventure_day1_day30.png" alt="Day 1 vs Day 30 IRL challenge YouTube thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>IRL Split</span>
+                <span>Photoshop</span>
+              </div>
+              <h3>Day 1 vs Day 30: Transformation</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="Never Found: Mystery Documentary"
+            data-tools="Photoshop • Moody Grading"
+            data-desc="Foggy roadside motel night scene paired with bold white and deep red lettering."
+            data-src="portfolio-thumbnails/03_true_crime_never_found.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/03_true_crime_never_found.png" alt="Never Found mystery documentary thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>True Crime</span>
+                <span>Photoshop</span>
+              </div>
+              <h3>Never Found: Mystery Doc</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="The $40B Lie: Finance Documentary"
+            data-tools="Illustrator • Photoshop"
+            data-desc="Dark financial story collage mixing falling 3D chart pillars, paper ledgers, and a sharp red crash line."
+            data-src="portfolio-thumbnails/04_finance_doc_40b_lie.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/04_finance_doc_40b_lie.png" alt="The 40B Lie finance documentary thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Finance Doc</span>
+                <span>Illustrator</span>
+              </div>
+              <h3>The $40B Lie: Finance Doc</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="120x Faster: Tech &amp; SaaS Comparison"
+            data-tools="Figma • Photoshop"
+            data-desc="Clean bright tech comparison contrasting a plain white legacy card against a glowing dark speed card."
+            data-src="portfolio-thumbnails/05_tech_saas_120x_faster.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/05_tech_saas_120x_faster.png" alt="120x Faster tech comparison thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Tech / SaaS</span>
+                <span>Figma</span>
+              </div>
+              <h3>120× Faster: Tech Comparison</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="Rewire Your Brain: Mindset Essay"
+            data-tools="Illustrator • Editorial Type"
+            data-desc="Warm cream poster illustration built around a head silhouette and crisp classic serif typography."
+            data-src="portfolio-thumbnails/06_psychology_rewire_brain.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/06_psychology_rewire_brain.png" alt="Rewire Your Brain psychology thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Psychology</span>
+                <span>Illustrator</span>
+              </div>
+              <h3>Rewire Your Brain: Essay</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-thumb"
+            data-category="thumbnails"
+            data-title="14.8% CTR Fix: Creator Case Study"
+            data-tools="Figma • Illustrator"
+            data-desc="Clean royal blue and bright mint chart graphic showing a massive +957% click-through jump."
+            data-src="portfolio-thumbnails/07_creator_growth_ctr_fix.png"
+          >
+            <div class="work-media ratio-16-9">
+              <img src="portfolio-thumbnails/07_creator_growth_ctr_fix.png" alt="14.8 percent CTR fix creator analytics thumbnail" loading="lazy" />
+              <span class="media-badge">16:9 THUMBNAIL</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Analytics</span>
+                <span>Figma</span>
+              </div>
+              <h3>14.8% CTR Fix: Case Study</h3>
+            </div>
+          </article>
+
+          <!-- UI/UX Design (3) -->
+          <article
+            class="work-card type-uiux"
+            data-category="uiux"
+            data-title="ZenPay: Mobile Fintech &amp; Cashflow UI"
+            data-tools="Figma • Design System"
+            data-desc="Dark-mode mobile wallet concept paired with a clear daily spending and cashflow tracker."
+            data-src="assets/uiux-01-zenpay-fintech.png"
+          >
+            <div class="work-media ratio-4-3">
+              <img src="assets/uiux-01-zenpay-fintech.png" alt="ZenPay Fintech mobile and dashboard UI UX design" loading="lazy" />
+              <span class="media-badge badge-indigo">UI/UX CONCEPT</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Mobile + Web</span>
+                <span>Figma</span>
+              </div>
+              <h3>ZenPay: Fintech Banking UI</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-uiux"
+            data-category="uiux"
+            data-title="CreatorPulse: Thumbnail A/B Analytics SaaS"
+            data-tools="Figma • Prototyping"
+            data-desc="Clean web dashboard designed for YouTubers to compare thumbnail tests, watch time, and click rates."
+            data-src="assets/uiux-02-creator-pulse-saas.png"
+          >
+            <div class="work-media ratio-4-3">
+              <img src="assets/uiux-02-creator-pulse-saas.png" alt="CreatorPulse SaaS A B testing web UI design" loading="lazy" />
+              <span class="media-badge badge-indigo">UI/UX CONCEPT</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>SaaS Dashboard</span>
+                <span>Figma</span>
+              </div>
+              <h3>CreatorPulse: A/B Testing App</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-uiux"
+            data-category="uiux"
+            data-title="Kaze: Boutique Japan Travel App"
+            data-tools="Figma • Illustrator"
+            data-desc="Three-screen mobile trip planner with calm spacing, soft cards, and simple custom icons."
+            data-src="assets/uiux-03-kaze-travel-app.png"
+          >
+            <div class="work-media ratio-4-3">
+              <img src="assets/uiux-03-kaze-travel-app.png" alt="Kaze boutique Japan travel mobile app UI design" loading="lazy" />
+              <span class="media-badge badge-indigo">UI/UX CONCEPT</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>iOS App</span>
+                <span>Figma + Ai</span>
+              </div>
+              <h3>Kaze: Curated Travel App</h3>
+            </div>
+          </article>
+
+          <!-- Instagram Posts (4) -->
+          <article
+            class="work-card type-ig"
+            data-category="instagram"
+            data-title="5 Design Rules: Creator Carousel Cover"
+            data-tools="Photoshop • Canva"
+            data-desc="High-contrast Instagram carousel cover built to catch attention fast with a simple before-and-after hook."
+            data-src="assets/ig-01-design-hooks.png"
+          >
+            <div class="work-media ratio-4-5">
+              <img src="assets/ig-01-design-hooks.png" alt="5 Design Rules Instagram carousel cover" loading="lazy" />
+              <span class="media-badge badge-red">4:5 INSTAGRAM</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Carousel</span>
+                <span>Canva + Ps</span>
+              </div>
+              <h3>5 Design Rules: IG Carousel</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-ig"
+            data-category="instagram"
+            data-title="Woodblock Modernism: Print Drop"
+            data-tools="Illustrator • Photoshop"
+            data-desc="Japanese print-inspired social poster mixing bold sun and mountain shapes with a traditional stamp seal."
+            data-src="assets/ig-02-ukiyoe-poster.png"
+          >
+            <div class="work-media ratio-4-5">
+              <img src="assets/ig-02-ukiyoe-poster.png" alt="Woodblock Modernism Ukiyo-e Instagram poster" loading="lazy" />
+              <span class="media-badge badge-red">4:5 INSTAGRAM</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Poster Drop</span>
+                <span>Illustrator</span>
+              </div>
+              <h3>Woodblock Modernism: IG Art</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-ig"
+            data-category="instagram"
+            data-title="Typography 101: Saveable Guide"
+            data-tools="Figma • Canva"
+            data-desc="Clean cheat sheet breaking down font sizes, line spacing, and simple pairing tips for creators."
+            data-src="assets/ig-03-typography-rules.png"
+          >
+            <div class="work-media ratio-4-5">
+              <img src="assets/ig-03-typography-rules.png" alt="Typography 101 Instagram educational post" loading="lazy" />
+              <span class="media-badge badge-red">4:5 INSTAGRAM</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Infographic</span>
+                <span>Figma + Canva</span>
+              </div>
+              <h3>Typography 101: Carousel</h3>
+            </div>
+          </article>
+
+          <article
+            class="work-card type-ig"
+            data-category="instagram"
+            data-title="Kaze Botanical: Product Promo"
+            data-tools="Photoshop • Canva"
+            data-desc="Minimal forest-green skincare promo post with subtle film grain and clean serif text."
+            data-src="assets/ig-04-brand-promo.png"
+          >
+            <div class="work-media ratio-4-5">
+              <img src="assets/ig-04-brand-promo.png" alt="Kaze Botanical skincare Instagram product campaign post" loading="lazy" />
+              <span class="media-badge badge-red">4:5 INSTAGRAM</span>
+            </div>
+            <div class="work-meta">
+              <div class="work-tags">
+                <span>Brand Campaign</span>
+                <span>Canva + Ps</span>
+              </div>
+              <h3>Kaze Botanical: Product Ad</h3>
+            </div>
+          </article>
+            </div>
+            <button type="button" class="carousel-arrow carousel-next" id="carouselNext" aria-label="Next work">›</button>
+          </div>
+
+          <div class="carousel-controls-bar">
+            <div class="carousel-nav-group">
+              <button type="button" class="carousel-ctrl-btn" id="carouselPrevBtn" aria-label="Previous work">← Prev</button>
+              <span class="carousel-counter" id="carouselCounter">01 / 14</span>
+              <button type="button" class="carousel-ctrl-btn" id="carouselNextBtn" aria-label="Next work">Next →</button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Carousel slide indicators"></div>
+
+            <button type="button" class="carousel-auto-btn is-playing" id="carouselAutoBtn" aria-pressed="true">
+              <i class="carousel-auto-dot" aria-hidden="true"></i>
+              <span>Auto-Revolve</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Before vs After Evolution Strip -->
+        <div class="evolution-box">
+          <div class="evolution-copy">
+            <span class="section-kicker">STYLE EVOLUTION • 成長の記録</span>
+            <h3>How My Thumbnails Grew Over Time</h3>
+            <p>
+              Putting my older channel edits (<span class="mono-inline">DC thumb.png</span> and <span class="mono-inline">dvd thumb.png</span>) next to the newer thumbnails shows how much cleaner my framing, lighting, and short 3-word titles have become across different niches.
+            </p>
+          </div>
+          <div class="evolution-thumbs">
+            <figure class="evo-fig">
+              <img src="my work thumbnail/DC thumb.png" alt="Original DC Paradise Lost thumbnail" loading="lazy" />
+              <figcaption>Early Sample • DC Essay</figcaption>
+            </figure>
+            <figure class="evo-fig">
+              <img src="my work thumbnail/dvd thumb.png" alt="Original GTA Episode 69 thumbnail" loading="lazy" />
+              <figcaption>Early Sample • Gaming</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transition 04: Selected Works -> Live Websites -->
+    <div class="tab-transition tx-wave tx-deep-to-washi" data-transition="live-sites" aria-hidden="true">
+      <svg class="tx-wave-svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
+        <path class="tx-fill-mist" d="M0,48 C240,22 480,68 720,44 C960,20 1180,68 1440,42 L1440,0 L0,0 Z"/>
+        <path class="tx-fill-top" d="M0,0 L1440,0 L1440,34 C1180,62 960,12 720,36 C480,60 240,14 0,38 Z"/>
+        <path class="tx-wave-stroke" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+        <path class="tx-accent-ribbon" pathLength="100" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+      </svg>
+      <div class="tx-gate">
+        <i class="tx-tick"></i>
+        <span class="tx-pill"><span class="tx-num">04</span> Live Websites</span>
+        <i class="tx-tick"></i>
+      </div>
+    </div>
+
+    <!-- Live Websites Showcase (Interactive Mini Screens) -->
+    <section id="live-sites" class="live-sites-section" data-section="live-sites">
+      <div class="container">
+        <div class="work-header-bar live-sites-header">
+          <div>
+            <span class="section-kicker">LIVE WEBSITES • 実働ウェブサイト</span>
+            <h2 class="section-title">Websites I Designed &amp; Built</h2>
+            <p class="section-sub">
+              Try out my live websites right inside these mini screens. Switch between desktop and phone views, scroll around inside each site, or expand them to full screen.
+            </p>
+          </div>
+          <div class="live-badge-strip" aria-hidden="true">
+            <span class="live-dot-pill"><i class="live-pulse"></i> LIVE VERCEL PREVIEWS</span>
+          </div>
+        </div>
+
+        <div class="live-sites-grid" id="liveSitesGrid"></div>
+      </div>
+    </section>
+
+    <!-- Transition 05: Live Websites -> Website Styles -->
+    <div class="tab-transition tx-wave tx-washi-to-concepts is-mirrored" data-transition="concepts" aria-hidden="true">
+      <svg class="tx-wave-svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
+        <path class="tx-fill-mist" d="M0,48 C240,22 480,68 720,44 C960,20 1180,68 1440,42 L1440,0 L0,0 Z"/>
+        <path class="tx-fill-top" d="M0,0 L1440,0 L1440,34 C1180,62 960,12 720,36 C480,60 240,14 0,38 Z"/>
+        <path class="tx-wave-stroke" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+        <path class="tx-accent-ribbon" pathLength="100" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+      </svg>
+      <div class="tx-gate">
+        <i class="tx-tick"></i>
+        <span class="tx-pill"><span class="tx-num">05</span> Website Styles</span>
+        <i class="tx-tick"></i>
+      </div>
+    </div>
+
+    <!-- 19 Website & UI/UX Style Concepts Section -->
+    <section id="concepts" class="concepts-section" data-section="concepts">
+      <div class="container">
+        <div class="work-header-bar concepts-header">
+          <div>
+            <span class="section-kicker">WEBSITE &amp; UI/UX CONCEPTS • 十九様式</span>
+            <h2 class="section-title">19 Website Styles I Work With</h2>
+            <p class="section-sub">
+              From tactile skeuomorphic UI and Bauhaus grids to vaporwave, glitch, brutalism, and ukiyo-e, click any card to view a larger preview and color palette.
+            </p>
+          </div>
+
+          <div class="filter-tabs" role="tablist" aria-label="Filter website design concepts">
+            <button class="filter-btn active" data-concept-filter="all" role="tab" aria-selected="true">
+              All Styles <span class="count">19</span>
+            </button>
+            <button class="filter-btn" data-concept-filter="tactile" role="tab" aria-selected="false">
+              Tactile &amp; 3D <span class="count">6</span>
+            </button>
+            <button class="filter-btn" data-concept-filter="art" role="tab" aria-selected="false">
+              Art &amp; Print <span class="count">5</span>
+            </button>
+            <button class="filter-btn" data-concept-filter="retro" role="tab" aria-selected="false">
+              Retro &amp; Subculture <span class="count">5</span>
+            </button>
+            <button class="filter-btn" data-concept-filter="digital" role="tab" aria-selected="false">
+              Avant-Garde &amp; Digital <span class="count">3</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="concepts-grid" id="conceptsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Transition 06: Website Styles -> Commission -->
+    <div class="tab-transition tx-wave tx-concepts-to-washi" data-transition="contact" aria-hidden="true">
+      <svg class="tx-wave-svg" viewBox="0 0 1440 72" preserveAspectRatio="none">
+        <path class="tx-fill-mist" d="M0,48 C240,22 480,68 720,44 C960,20 1180,68 1440,42 L1440,0 L0,0 Z"/>
+        <path class="tx-fill-top" d="M0,0 L1440,0 L1440,34 C1180,62 960,12 720,36 C480,60 240,14 0,38 Z"/>
+        <path class="tx-wave-stroke" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+        <path class="tx-accent-ribbon" pathLength="100" d="M0,38 C240,14 480,60 720,36 C960,12 1180,62 1440,34"/>
+      </svg>
+      <div class="tx-gate">
+        <i class="tx-tick"></i>
+        <span class="tx-pill"><span class="tx-num">06</span> Commission</span>
+        <i class="tx-tick"></i>
+      </div>
+    </div>
+
+    <!-- Contact / Commission Scroll -->
+    <section id="contact" class="contact-section" data-section="contact">
+      <div class="container">
+        <div class="contact-scroll">
+          <div class="contact-left">
+            <span class="section-kicker">COMMISSION &amp; INQUIRIES • ご連絡</span>
+            <h2>Let’s Work Together on Your Next Thumbnail, Website, or Social Post.</h2>
+            <p>
+              I’m available for YouTube thumbnail retainers, Figma website and app design, and monthly Instagram post packages.
+            </p>
+          </div>
+
+          <div class="contact-right">
+            <div class="contact-card">
+              <div class="contact-row">
+                <span class="contact-lbl">Direct Email</span>
+                <a href="mailto:ram.manthanwar@gmail.com" class="contact-val" data-field="email">ram.manthanwar@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-lbl">Instagram</span>
+                <a href="https://www.instagram.com/randm_aces_memory/" target="_blank" rel="noopener noreferrer" class="contact-val" data-field="instagram">@randm_aces_memory</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-lbl">Specialties</span>
+                <span class="contact-val">Thumbnails • UI/UX • Web</span>
+              </div>
+              <div class="contact-row">
+                <span class="contact-lbl">Availability</span>
+                <span class="contact-val" data-field="availability">Open for Freelance Projects</span>
+              </div>
+              <button type="button" class="btn btn-primary full-width" id="copyEmailBtn">
+                Copy Email Address
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        <span class="hanko-inline">印</span>
+        <span data-field="name">Ram Manthanwar</span> • Portfolio inspired by classic Japanese <em>Ukiyo-e</em> woodblock prints.
+      </p>
+      <p class="mono-meta">Photoshop • Illustrator • Figma • Canva</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-dialog">
+      <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+      <div class="lightbox-media">
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+      <div class="lightbox-info">
+        <span class="seal-pill" id="lightboxTools"></span>
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+        <div class="lightbox-nav">
+          <button type="button" class="btn btn-outline btn-sm" id="prevWork">← Prev</button>
+          <button type="button" class="btn btn-outline btn-sm" id="nextWork">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Website Concept Preview Modal -->
+  <div class="lightbox concept-modal" id="conceptModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="conceptModalTitle">
+    <div class="lightbox-backdrop" id="conceptBackdrop"></div>
+    <div class="lightbox-dialog concept-dialog">
+      <button type="button" class="lightbox-close" id="conceptClose" aria-label="Close concept preview">×</button>
+      <div class="concept-modal-stage-wrap">
+        <div class="concept-browser concept-browser-lg" id="conceptModalBrowser">
+          <div class="concept-browser-bar">
+            <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="browser-url" id="conceptModalUrl">concept://preview</span>
+          </div>
+          <div class="concept-stage concept-stage-lg" id="conceptModalStage"></div>
+        </div>
+      </div>
+      <div class="lightbox-info concept-modal-info">
+        <span class="seal-pill" id="conceptModalCategory"></span>
+        <h3 id="conceptModalTitle"></h3>
+        <p id="conceptModalDesc"></p>
+        <div class="concept-detail-block">
+          <span class="detail-label">BEST APPLIED TO</span>
+          <p class="detail-value" id="conceptModalBestFor"></p>
+        </div>
+        <div class="concept-detail-block">
+          <span class="detail-label">SIGNATURE PALETTE</span>
+          <div class="concept-swatches" id="conceptModalSwatches"></div>
+        </div>
+        <div class="lightbox-nav">
+          <button type="button" class="btn btn-outline btn-sm" id="prevConcept">← Prev</button>
+          <button type="button" class="btn btn-outline btn-sm" id="nextConcept">Next →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Website Monitor Modal -->
+  <div class="lightbox live-site-modal" id="liveSiteModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="liveSiteModalTitle">
+    <div class="lightbox-backdrop" id="liveSiteBackdrop"></div>
+    <div class="lightbox-dialog live-site-dialog">
+      <button type="button" class="lightbox-close" id="liveSiteClose" aria-label="Close website preview">×</button>
+      <div class="live-modal-chrome">
+        <div class="live-modal-bar">
+          <span class="browser-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="browser-url live-modal-url" id="liveSiteModalUrl"></a>
+          <div class="live-modal-actions">
+            <button type="button" class="btn btn-outline btn-sm" id="liveSiteModalReload">↻ Reload</button>
+            <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="liveSiteModalVisit">Visit Live Site ↗</a>
+          </div>
+        </div>
+        <div class="live-modal-frame-wrap">
+          <iframe id="liveSiteModalFrame" title="Live Website Preview" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="live-modal-meta">
+        <div>
+          <span class="seal-pill" id="liveSiteModalBadge"></span>
+          <h3 id="liveSiteModalTitle"></h3>
+        </div>
+        <p id="liveSiteModalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Graphic Design Pen Tool & Transform Cursor -->
+  <div class="cursor-ring is-hidden" id="customCursorRing" aria-hidden="true">
+    <i class="cursor-handle tl"></i>
+    <i class="cursor-handle tr"></i>
+    <i class="cursor-handle bl"></i>
+    <i class="cursor-handle br"></i>
+    <span class="cursor-crosshair" aria-hidden="true"></span>
+    <span class="cursor-label" id="customCursorLabel"></span>
+  </div>
+  <div class="cursor-dot is-hidden" id="customCursorDot" aria-hidden="true">
+    <svg class="cursor-pen-svg" viewBox="0 0 28 28" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2 2L16.5 6.5L18.2 13.2L22.7 17.7L17.7 22.7L13.2 18.2L6.5 16.5L2 2Z" stroke="#f3ecdc" stroke-width="2.6" stroke-linejoin="round" opacity="0.78"/>
+      <path d="M2 2L16.5 6.5L18.2 13.2L13.2 18.2L6.5 16.5L2 2Z" fill="#fffdf8" stroke="#141311" stroke-width="1.65" stroke-linejoin="round"/>
+      <path d="M2.8 2.8L10 10" stroke="#b83b2a" stroke-width="1.5" stroke-linecap="round"/>
+      <circle class="cursor-pen-breather" cx="11.1" cy="11.1" r="2.1" fill="#b83b2a" stroke="#141311" stroke-width="1.15"/>
+      <path class="cursor-pen-collar" d="M13.2 18.2L18.2 13.2L22.7 17.7L17.7 22.7L13.2 18.2Z" fill="#1e3a5f" stroke="#141311" stroke-width="1.65" stroke-linejoin="round"/>
+      <path d="M15.2 20.2L20.2 15.2" stroke="#f3ecdc" stroke-width="1.05" stroke-linecap="round" opacity="0.88"/>
+    </svg>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
