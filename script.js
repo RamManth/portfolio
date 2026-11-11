@@ -647,10 +647,19 @@ document.addEventListener("DOMContentLoaded", () => {
   applyProfileConfig();
 
   const portraitCard = document.getElementById("portraitCard");
+  const portraitCloseBtn = document.getElementById("portraitCloseBtn");
   if (portraitCard) {
+    portraitCloseBtn?.addEventListener("click", (e) => {
+      e.stopPropagation();
+      portraitCard.classList.remove("is-pinned");
+      portraitCard.blur();
+    });
     portraitCard.addEventListener("click", (e) => {
-      if (e.target.closest("a")) return;
-      portraitCard.classList.toggle("is-pinned");
+      if (e.target.closest("a") || e.target.closest("#portraitCloseBtn")) return;
+      const isNowPinned = portraitCard.classList.toggle("is-pinned");
+      if (!isNowPinned) {
+        portraitCard.blur();
+      }
     });
     document.addEventListener("click", (e) => {
       if (!portraitCard.contains(e.target)) {
@@ -714,7 +723,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const stageWidth = carouselStage?.clientWidth || window.innerWidth || 960;
     const isPhone = stageWidth < 560;
-    const step1 = isPhone ? Math.min(200, stageWidth * 0.56) : Math.min(286, stageWidth * 0.3);
+    const step1 = isPhone ? Math.min(205, stageWidth * 0.54) : Math.min(286, stageWidth * 0.3);
     const step2 = step1 * (isPhone ? 1.65 : 1.78);
 
     cards.forEach((c) => {
@@ -952,7 +961,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (e.changedTouches.length === 1) {
           const dx = e.changedTouches[0].clientX - startX;
           const dy = e.changedTouches[0].clientY - startY;
-          if (Math.abs(dx) >= 40 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+          if (Math.abs(dx) >= 32 && Math.abs(dx) > Math.abs(dy) * 1.1) {
             suppressCardClick = true;
             setTimeout(() => {
               suppressCardClick = false;
@@ -964,6 +973,15 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           updateAutoRevolve();
         }
+      },
+      { passive: true }
+    );
+
+    carouselStage.addEventListener(
+      "touchcancel",
+      () => {
+        isCarouselTouching = false;
+        updateAutoRevolve();
       },
       { passive: true }
     );
@@ -1405,6 +1423,7 @@ function initScrollChoreography() {
   document.documentElement.classList.add("js-scroll");
 
   const rootEl = document.documentElement;
+  const siteHeader = document.querySelector(".site-header");
   const heroEl = document.getElementById("hero");
   const sections = Array.from(document.querySelectorAll("section[data-section]"));
   const transitions = Array.from(document.querySelectorAll(".tab-transition"));
@@ -1413,6 +1432,11 @@ function initScrollChoreography() {
   const navTargets = Array.from(document.querySelectorAll("[data-nav-target]"));
   const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)");
   let lastScrolledNavId = "";
+
+  function syncNavScrollOffset() {
+    if (!siteHeader) return;
+    rootEl.style.setProperty("--nav-scroll-offset", `${Math.ceil(siteHeader.offsetHeight + 8)}px`);
+  }
 
   function smoothstep(t) {
     const c = Math.min(1, Math.max(0, t));
@@ -1544,17 +1568,20 @@ function initScrollChoreography() {
 
   window.addEventListener("scroll", requestScrollTick, { passive: true });
   window.addEventListener("resize", () => {
+    syncNavScrollOffset();
     requestScrollTick();
     checkInitialAndVisible();
   });
 
   document.addEventListener("portfolio:relayout", () => {
     requestAnimationFrame(() => {
+      syncNavScrollOffset();
       checkInitialAndVisible();
       updateScrollState();
     });
   });
 
+  syncNavScrollOffset();
   updateScrollState();
   checkInitialAndVisible();
 }
