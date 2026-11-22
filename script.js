@@ -686,6 +686,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightboxTitle = document.getElementById("lightboxTitle");
   const lightboxTools = document.getElementById("lightboxTools");
   const lightboxDesc = document.getElementById("lightboxDesc");
+  const lightboxResTag = document.getElementById("lightboxResTag");
+  const lightboxFullRes = document.getElementById("lightboxFullRes");
+  const lightboxDialog = lightbox?.querySelector(".lightbox-dialog");
   const lightboxClose = document.getElementById("lightboxClose");
   const lightboxBackdrop = document.getElementById("lightboxBackdrop");
   const prevWorkBtn = document.getElementById("prevWork");
@@ -1025,11 +1028,29 @@ document.addEventListener("DOMContentLoaded", () => {
     activeSlide = activeIndex;
     layoutCarousel();
     const card = currentVisibleCards[activeIndex];
+    const cat = card.dataset.category || "";
     lightboxImg.src = card.dataset.src || "";
     lightboxImg.alt = card.dataset.title || "Portfolio preview";
     lightboxTitle.textContent = card.dataset.title || "";
     lightboxTools.textContent = card.dataset.tools || "";
     lightboxDesc.textContent = card.dataset.desc || "";
+    if (lightboxFullRes) {
+      lightboxFullRes.href = card.dataset.src || "#";
+    }
+    if (lightboxResTag) {
+      if (cat === "thumbnails") {
+        lightboxResTag.textContent = "16:9 Widescreen • 1280×720 HD";
+      } else if (cat === "instagram") {
+        lightboxResTag.textContent = "4:5 Vertical Poster • Uncropped High-Res";
+      } else if (cat === "uiux") {
+        lightboxResTag.textContent = "4:3 UI/UX Concept • 1200×900";
+      } else {
+        lightboxResTag.textContent = "Original Resolution • Uncropped";
+      }
+    }
+    if (lightboxDialog) {
+      lightboxDialog.dataset.aspect = cat === "instagram" ? "4-5" : (cat === "uiux" ? "4-3" : "16-9");
+    }
     lightbox.classList.add("open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.style.overflow = "hidden";
